@@ -15,12 +15,13 @@
         android:text="TIC TAC TOE"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <GridLayout
         android:id="@+id/gridLayout2"
@@ -30,7 +31,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31">
 
         <Button
             android:id="@+id/btn1"
@@ -77,7 +79,7 @@
             android:onClick="check"
             android:text=""
             android:textColor="@color/black"
-            android:textSize="60sp"/>
+            android:textSize="60sp" />
 
         <Button
             android:id="@+id/btn6"
@@ -87,7 +89,7 @@
             android:onClick="check"
             android:text=""
             android:textColor="@color/black"
-            android:textSize="60sp"/>
+            android:textSize="60sp" />
 
         <Button
             android:id="@+id/btn7"
@@ -96,7 +98,7 @@
             android:onClick="check"
             android:text=""
             android:textColor="@color/black"
-            android:textSize="60sp"/>
+            android:textSize="60sp" />
 
         <Button
             android:id="@+id/btn8"
@@ -106,7 +108,7 @@
             android:onClick="check"
             android:text=""
             android:textColor="@color/black"
-            android:textSize="60sp"/>
+            android:textSize="60sp" />
 
         <Button
             android:id="@+id/btn9"
@@ -116,7 +118,7 @@
             android:onClick="check"
             android:text=""
             android:textColor="@color/black"
-            android:textSize="60sp"/>
+            android:textSize="60sp" />
 
     </GridLayout>
 
@@ -133,5 +135,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout2"
         app:layout_constraintVertical_bias="0.23000002" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/newGame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintVertical_bias="0.32999998" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

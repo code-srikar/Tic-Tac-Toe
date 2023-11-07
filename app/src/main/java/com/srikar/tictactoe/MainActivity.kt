@@ -20,6 +20,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.newGame.setOnClickListener(){
+            newGame()
+        }
+
     }
 
     fun check(view: View) {
@@ -50,50 +54,23 @@ class MainActivity : AppCompatActivity() {
 
             if (b1 == b2 && b2 == b3 && b3 != "") {
                 binding.result.text = "Winner is $b1"
-                Handler().postDelayed(Runnable {
-                    newGame()
-                },1000)
             } else if (b4.equals(b5) && b5 == b6 && b6 != "") {
                 binding.result.text = "Winner is $b4"
-                Handler().postDelayed(Runnable {
-                    newGame()
-                },1000)
             } else if (b7 == b8 && b8 == b9 && b9 != "") {
                 binding.result.text = "Winner is $b7"
-                Handler().postDelayed(Runnable {
-                    newGame()
-                },1000)
             } else if (b1 == b4 && b4 == b7 && b7 != "") {
                 binding.result.text = "Winner is $b1"
-                Handler().postDelayed(Runnable {
-                    newGame()
-                },1000)
             } else if (b2 == b5 && b5 == b8 && b8 != "") {
                 binding.result.text = "Winner is $b2"
-                Handler().postDelayed(Runnable {
-                    newGame()
-                },1000)
             } else if (b3 == b6 && b6 == b9 && b9 != "") {
                 binding.result.text = "Winner is $b3"
-                Handler().postDelayed(Runnable {
-                    newGame()
-                },1000)
             } else if (b1 == b5 && b5 == b9 && b9 != "") {
                 binding.result.text = "Winner is $b1"
-                Handler().postDelayed(Runnable {
-                    newGame()
-                },1000)
             } else if (b3 == b5 && b5 == b7 && b7 != "") {
                 binding.result.text = "Winner is $b3"
-                Handler().postDelayed(Runnable {
-                    newGame()
-                },1000)
             }
             else if(count==9){
                 binding.result.text = "Match is Drawn"
-                Handler().postDelayed(Runnable {
-                    newGame()
-                },1000)
             }
         }
 
