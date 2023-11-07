@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.newGame.setOnClickListener(){
             newGame()
+            Toast.makeText(this,"New Game Started",Toast.LENGTH_SHORT).show()
         }
 
     }
